@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitnessfunctionapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.fitnessfunctionapp.FitnessFunctionApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.fitnessfunctionapp.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.PauseActivity"
+            android:label="@string/title_activity_pause"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.LogonActivity"
+            android:label="@string/title_activity_logon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.ArmsActivity"
+            android:label="@string/title_activity_arms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.LegsActivity"
+            android:label="@string/title_activity_legs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.StatsActivity"
+            android:label="@string/title_activity_stats" >
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.SimpleViewPagerActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fitnessfunctionapp.ArmsTutorial"
+            android:label="@string/title_activity_arms_tutorial" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fitnessfunctionapp.WelcomeActivity"
+    tools:ignore="MergeRootFrame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/welcome_background"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="90dp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/statsbutton" 
+                android:onClick="goToStatsActivity"/>
+
+            <Button
+                android:id="@+id/beginarmworkout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_above="@+id/beginlegsworkout"
+                android:layout_alignLeft="@+id/beginlegsworkout"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/beginarmworkout"
+                android:onClick="goToArmsActivity" />
+
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/beginarmworkout"
+                android:layout_below="@+id/welcomescreenlogo"
+                android:layout_marginTop="33dp"
+                android:text="Welcome "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWelcome"
+                android:layout_centerHorizontal="true"
+                android:text="Let&apos;s unlock your body&apos;s full potential and improve your well being. Let&apos;s level up!"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/welcomescreenlogo"
+                android:layout_width="157dp"
+                android:layout_height="151dp"
+                android:layout_below="@+id/view3"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="cat"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_screen_logo" />
+
+            <TextView
+                android:id="@+id/textViewAverageScore"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/beginlegsworkout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_above="@+id/button1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/beginlegsworkout"
+                android:onClick="goToLegsActivity" />
+
+        </RelativeLayout>
+    
+</FrameLayout>
+

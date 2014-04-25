@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fitnessfunctionapp.PauseActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fitness_function_background" >
+        
+        <View
+		  android:layout_width="1dp"
+		  android:layout_height="150dp">
+		</View>
+		
+            <Button
+            android:id="@+id/resumebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/resumebckgrnd" />
+            
+            <View
+		  android:layout_width="1dp"
+		  android:layout_height="5dp">
+		</View>
+		
+            <Button
+            android:id="@+id/restartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/restartbckgrnd" />
+            
+            <View
+		  android:layout_width="1dp"
+		  android:layout_height="5dp">
+		</View>
+		
+            <Button
+            android:id="@+id/homebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/homebckgrnd" />
+            
+            <View
+		  android:layout_width="1dp"
+		  android:layout_height="5dp">
+		</View>
+		
+            <Button
+            android:id="@+id/howtobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/howtobckgrnd" />
+            
+    	</LinearLayout>
+    </FrameLayout>
+

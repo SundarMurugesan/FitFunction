@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop = "0dp"
+    android:paddingLeft = "0dp"
+    tools:context="com.fitnessfunctionapp.ArmsActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/armsLogo"
+        android:layout_width="375dp"
+        android:layout_height="257dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/arms" />
+
+    <ImageView
+        android:id="@+id/armsLogo"
+        android:layout_width="375dp"
+        android:layout_height="257dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/arms" />
+
+        <Button
+            android:id="@+id/howtoplayarms"
+            android:layout_width="51dp"
+            android:layout_height="54dp"
+            android:layout_alignBaseline="@+id/beginStrengthTest"
+            android:layout_alignBottom="@+id/beginStrengthTest"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/howtoplayarms"
+            android:onClick="beginArmsTutorial"
+            android:paddingRight="100dp" />
+
+        <Button
+            android:id="@+id/beginStrengthTest"
+            android:layout_width="244dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_toRightOf="@+id/howtoplayarms"
+            android:background="@drawable/beginstrengthtest"
+            android:onClick="beginStrengthTest" />
+
+        <TextView
+            android:id="@+id/averageAcc"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/armsLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="SCORE" />
+
+        <TextView
+            android:id="@+id/timer"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/averageAcc"
+            android:layout_centerHorizontal="true"
+            android:text="COUNTDOWN" />
+
+</RelativeLayout>
+
+

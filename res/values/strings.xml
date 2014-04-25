@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitFunction</string>
+    <string name="hello_world"></string>
+    <string name="action_settings"></string>
+    <string name="title_activity_welcome"></string>
+    <string name="title_activity_pause"></string>
+    <string name="title_activity_logon"></string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+    <string name="title_activity_sign_up"></string>
+    <string name="email_hint">Email</string>
+    <string name="sign_up_button_label">Sign Up</string>
+    <string name="signup_error_message">Please make sure you enter a username, password, and email address!</string>
+    <string name="signup_error_title">Oops!</string>
+    <string name="login_error_message">Please make sure you enter a username and password!</string>
+    <string name="login_error_title">Oops!</string>
+    <string name="title_activity_arms"></string>
+    <string name="title_activity_legs"></string>
+    <string name="menu_logout_label">Logout</string>
+    <string name="title_activity_stats"></string>
+    <string name="title_activity_arms_tutorial"></string>
+
+</resources>
